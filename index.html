@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- шапка -->
+    <header class="text-bg-success p-3">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-xxl">
+          <a class="navbar-brand text-primary" href="#">SPORT</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Переключатель навигации">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >
+                  <img src="./img/spisok.svg" alt="" class="icon-list" />
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Футбол</a></li>
+                  <li><a class="dropdown-item" href="#">Баскетбол</a></li>
+                  <li><a class="dropdown-item" href="#">Хоккей</a></li>
+                  <li><a class="dropdown-item" href="#">ММА</a></li>
+                  <li><a class="dropdown-item" href="#">Бокс</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Бивол - Бетербиев</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Барселона - Атлетико</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Сити - Ливерпуль</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Поиск новости"
+                aria-label="поиск"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Поиск
+              </button>
+            </form>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              <img src="./img/user-check.svg" alt="user" class="user-check"/>
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Авторизация
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Закрыть"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Адрес электронной почты</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Мы никогда никому не передадим вашу электронную почту.</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Пароль</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Проверить меня</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- контент сайта -->
+    <section class="one">
+      <div class="container-xxl">
+      <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
+        <div
+          class="container text-center p-3 mb-2 bg-success-subtle text-success-emphasis">
+          <h4 class="p-3 mb-2 bg-success text-white">МАТЧ ЦЕНТР</h4>
+          <div class="row row-cols-4">
+            <div class="col">Барселона - Атлетико</div>
+            <div class="col">Реал Мадрид - Бетис</div>
+            <div class="col">Манчестер Сити - Ливерпуль</div>
+            <div class="col">Манчестер Юнайтед - Эвертон</div>
+            <div class="col">Рома - Монца</div>
+            <div class="col">Севилья - Мальорка</div>
+            <div class="col">Интер - Лацио</div>
+            <div class="col">ПСЖ - Монако</div>
+            <div class="col">Ноттингем Форест - Арсенал</div>
+            <div class="col">Ювентус - Эмполи</div>
+            <div class="col">Милан - Торино</div>
+            <div class="col">Атлетик - Севилья</div>
+            <div class="col">Лион - Марсель</div>
+            <div class="col">Бавария - Боруссия Дортмунд</div>
+            <div class="col">Астон Вилла - Тоттенхэм</div>
+            <div class="col">Вэст Хэм - Лестер</div>
+          </div>
+        </div>
+      </div>
+      <div class="container-xxl">
+        <div
+          class="row align-items-center shadow p-3 mb-5 bg-body-tertiary  rounded p-3 mb-2 bg-secondary-subtle text-secondary-emphasis">
+          <div class="col-7">
+            <h1 class="text-center">Событие дня</h1>
+            <p>
+              Дмитрий Бивол и Артур Бетербиев устроили финальную битву взглядов
+              перед боем в Эр-Рияде. 22 февраля в Эр-Рияде состоится турнир по
+              боксу, в главном событии которого Артур Бетербиев проведет защиту
+              титула абсолютного чемпиона мира в полутяжелом весе в поединке с
+              Дмитрием Биволом. После церемонии взвешивания боксеры устроили
+              последнюю битву взглядов.
+            </p>
+          </div>
+          <div class="col-5">
+            <img class="w-100" src="./img/revansh.webp" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="two">
+      <div class="container-xxl">
+        <h2>Лента новостей</h2>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row justify-content-between">
+                <div class="col">
+                  <div class="card w-100">
+                    <img src="./img/messi.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Месси в огне</h5>
+                      <p class="card-text">Месси начал сезон МЛС с двух голевых: вырвал ничью на 90+10 в меньшинстве</p>
+                      <a href="#" class="btn btn-primary">Перейти к статье</a>
+                    </div>
+                  </div>
+                </div>
+                  <div class="col">
+                    <div class="card w-100">
+                      <img src="./img/manu.webp" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Два португальских стандарта</h5>
+                        <p class="card-text">«МЮ» страдал полтора тайма – а потом расстроил Мойеса: из 0:2 в 2:2 за 8 минут!</p>
+                        <a href="#" class="btn btn-primary">Перейти к статье</a>
+                      </div>
+                    </div>
+                </div>
+                  <div class="col">
+                    <div class="card w-100">
+                      <img src="./img/realm.webp" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Ищем мафию в мирном городе</h5>
+                        <p class="card-text">Заговор судей против «Реала»: миф или …?</p>
+                        <a href="#" class="btn btn-primary">Перейти к статье</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card w-100">
+                    <img src="./img/bivol.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">О бое между Биволом и Бетербиевым</h5>
+                      <p class="card-text">7 быстрых мыслей экспертов, о победе Бивола над Бетербиевым в реванше</p>
+                      <a href="#" class="btn btn-primary">Перейти к статье</a>
+                    </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-between">
+                <div class="col">
+                  <div class="card w-100">
+                    <img src="./img/fabre.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Гонка в Серии А</h5>
+                      <p class="card-text">Фабрегас с «Комо» вдруг уложил учителя Конте. И вот «Наполи» не лидер – а дальше-то «Интер»</p>
+                      <a href="#" class="btn btn-primary">Перейти к статье</a>
+                    </div>
+                  </div>
+                </div>
+                  <div class="col">
+                    <div class="card w-100">
+                      <img src="./img/ovech.webp" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Вечерний суперматч в НХЛ</h5>
+                        <p class="card-text">«Вашингтон» против веселого «Эдмонтона», ждем гол Овечкина</p>
+                        <a href="#" class="btn btn-primary">Перейти к статье</a>
+                      </div>
+                    </div>
+                </div>
+                  <div class="col">
+                    <div class="card w-100">
+                      <img src="./img/aston.webp" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Рэшфорд и Асенсио сверкнули</h5>
+                        <p class="card-text">Cоорудили оба гола с «Челси». Они возвращаются?</p>
+                        <a href="#" class="btn btn-primary">Перейти к статье</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card w-100">
+                    <img src="./img/vanp.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Ван Перси – главный тренер «Фейеноорда».</h5>
+                      <p class="card-text">Контракт с 41-летним специалистом подписали на два года, до лета 2027-го.</p>
+                      <a href="#" class="btn btn-primary">Перейти к статье</a>
+                    </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-between">
+                <div class="col">
+                  <div class="card w-100">
+                    <img src="./img/arse.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Конец...?</h5>
+                      <p class="card-text">«Арсенал» проиграл «Вест Хэму». Теперь -8 от «Ливерпуля»</p>
+                      <a href="#" class="btn btn-primary">Перейти к статье</a>
+                    </div>
+                  </div>
+                </div>
+                  <div class="col">
+                    <div class="card w-100">
+                      <img src="./img/che.webp" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Кошмар</h5>
+                        <p class="card-text">Новая ошибка вратаря – и «Челси» опять проиграл.</p>
+                        <a href="#" class="btn btn-primary">Перейти к статье</a>
+                      </div>
+                    </div>
+                </div>
+                  <div class="col">
+                    <div class="card w-100">
+                      <img src="./img/udine.webp" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Необычный эпизод в Серии А.</h5>
+                        <p class="card-text">Форвард забрал мяч у пенальтиста, забил, нарвался на игнор от всей команды.</p>
+                        <a href="#" class="btn btn-primary">Перейти к статье</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card w-100">
+                    <img src="./img/bask.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Нет дыма без огня?</h5>
+                      <p class="card-text">«Мемфис» проводит мощный сезон. Тогда откуда растут слухи про обмен Джа Морэнта?</p>
+                      <a href="#" class="btn btn-primary">Перейти к статье</a>
+                    </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer class="container-fluid">
+      <div class="container">
+        <div class="row justify-content-between">
+          <figure class="logo col-2">
+            <a href="#text-bg-success p-3">
+              <h3>SPORT</h3>
+            </a>
+            <p>
+              Все новости спорта в одном месте
+            </p>
+          </figure>
+          <nav class="menu col-3">
+            <a href="#" class="d-block">О нас</a>
+            <a href="#" class="d-block">Политика конфиденциальности</a>
+            <a href="#" class="d-block">Контакты</a>
+          </nav>
+          <div class="soc col-3">
+            <p>Следите за нами в соц.сетях</p>
+            <nav class="icon">
+              <a href="#">
+                <img src="./img/icons8-vk.svg" alt="vk">
+              </a>
+              <a href="#">
+                <img src="./img/icons8-телеграм.svg" alt="tg">
+              </a>
+              <a href="#">
+                <img src="./img/icons8-instagram.svg" alt="insta">
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
