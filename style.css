@@ -27,13 +27,12 @@ body section h2 {
   font-weight: bold;
   text-align: center;
 }
+ 
 .two {
-  margin-left: 100px;
-  margin-right: 50px;
-  width: 1200px;
-  display: flex;
-  justify-content: space-around;
+  padding-left: 200px;
+  padding-right: 200px;
 }
+
 .carousel-control-prev-icon {
   background-image: url(./img/arrow-left.svg);
 }
@@ -57,7 +56,6 @@ body section h2 {
 .modal-dialog {
   color: black;
 }
-
 footer {
   padding: 100px;
   background-color: #343a40;
