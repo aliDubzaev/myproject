@@ -2,30 +2,41 @@ body header .icon-list {
   width: 20px;
   height: 20px;
 }
+
 body header .user-check {
   width: 20px;
   height: 20px;
 }
+
 body header .btn-primary {
   margin-left: 20px;
 }
+
 body header .navbar-brand {
   font-size: 30px;
   font-weight: bolder;
 }
+
 body section {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 body section h1 {
   font-weight: bold;
 }
+
 body section p {
   font-size: 20px;
 }
+
 body section h2 {
   font-weight: bold;
   text-align: center;
+}
+
+.card-body > p {
+  font-style: italic;
 }
 
 .carousel-control-prev-icon {
@@ -51,28 +62,34 @@ body section h2 {
 .modal-dialog {
   color: black;
 }
+
 footer {
   padding: 100px;
   background-color: #343a40;
 }
+
 footer a {
   text-decoration: none;
 }
+
 footer a h3 {
   font-size: 30px;
   font-weight: bolder;
   text-decoration: none;
 }
+
 footer p {
   font-size: 17px;
   color: white;
 }
+
 footer nav a {
   color: white;
   margin-bottom: 20px;
   font-size: 15px;
   line-height: 20px;
 }
+
 footer img {
   width: 50px;
   height: 50px;
