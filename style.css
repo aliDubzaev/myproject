@@ -27,11 +27,6 @@ body section h2 {
   font-weight: bold;
   text-align: center;
 }
- 
-.two {
-  padding-left: 200px;
-  padding-right: 200px;
-}
 
 .carousel-control-prev-icon {
   background-image: url(./img/arrow-left.svg);
